@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Centra el contenido general */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header h1 {
+    color: #e57373; /* Un toque de rosa */
+    margin-bottom: 30px;
+}
+
+#letter-content img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del padre */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#proposal-section {
+    margin-top: 40px;
+}
+
+.question-text {
+    font-size: 1.8em;
+    color: #4CAF50; /* Un color que destaque */
+    margin-bottom: 20px;
+}
+
+#accept-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #FF9800; /* Un naranja llamativo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#accept-button:hover {
+    background-color: #F57C00;
+}
+
+#celebration-section h2 {
+    color: #FF5722; /* Rojo vibrante */
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Espacio entre las unidades de tiempo */
+}
+
+.time-unit {
+    text-align: center;
+}
+
+.time-unit span {
+    display: block;
+    font-size: 2.5em;
+    color: #3F51B5; /* Un azul */
+    font-weight: bold;
+}
+
+.time-unit .label {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilo para el canvas de fuegos artificiales */
+#fireworks-canvas {
+    position: fixed; /* Para cubrir toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    pointer-events: none; /* Permite interactuar con elementos debajo del canvas */
+}
