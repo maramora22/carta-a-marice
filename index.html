@@ -3,76 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una Pregunta Muy Importante</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Carta de Amor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <audio id="background-music" loop autoplay>
-        <source src="assets/audio/musica-fondo.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-
     <div class="container">
-        <header>
-            <h1>Para ti...</h1>
-        </header>
+        <audio id="bg-music" autoplay loop>
+            <source src="assets/musica-de-fondo.mp3" type="audio/mp3">
+        </audio>
 
-        <section id="letter-content">
-            <p>Mi amor,</p>
-            <p>Desde el día en que te conocí, supe que mi vida había cambiado para siempre. Cada momento a tu lado es una aventura, un aprendizaje y, sobre todo, una inmensa alegría. Has llenado mi mundo de color, risas y un amor que nunca imaginé posible.</p>
-
-            <img src="assets/images/tu-foto1.jpg" alt="Un momento juntos">
-
-            <p>Hemos construido recuerdos maravillosos...</p>
-
-            <img src="assets/images/tu-foto2.png" alt="Otro recuerdo especial">
-
-            <div class="video-container">
-                 <iframe src="https://www.youtube.com/embed/TU_ENL1p2-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-
-            <p>Y mirando hacia el futuro, solo puedo verte a mi lado, compartiendo cada paso, cada sueño, cada amanecer.</p>
-
-            <p>Por eso, hoy quiero hacerte una pregunta que guardo en lo más profundo de mi corazón.</p>
-
-            </section>
-
-        <section id="proposal-section">
-            <h2>Hay algo que necesito preguntarte...</h2>
-            <p class="question-text">¿Quieres casarte conmigo el 28 de junio de 2025?</p>
-            <button id="accept-button">¡SÍ!</button>
-        </section>
-
-        <section id="celebration-section" class="hidden">
-            <h2>¡¡¡SABÍA QUE DIRÍAS SÍ!!!</h2>
-            <p>¡Nos casaremos el 28 de junio de 2025!</p>
-
-            <h3>¡Cuenta regresiva para el gran día!</h3>
-            <div id="countdown">
-                <div class="time-unit">
-                    <span id="days"></span>
-                    <span class="label">Días</span>
+        <div class="letter">
+            <h1>Carta de Amor</h1>
+            <div class="content">
+                <p>Esta carta la empecé hace ya algunos meses...</p>
+                <!-- Agrega el resto del texto aquí -->
+                <p><strong>¿Me permitirías ser tu esposo?</strong></p>
+                <p><strong>¿Estás dispuesta a casarte conmigo el 28 de junio de 2025?</strong></p>
+                
+                <!-- Botones de Casamiento -->
+                <div class="buttons">
+                    <button id="yes-btn">Sí</button>
+                    <button id="no-btn">No</button>
                 </div>
-                <div class="time-unit">
-                    <span id="hours"></span>
-                    <span class="label">Horas</span>
-                </div>
-                <div class="time-unit">
-                    <span id="minutes"></span>
-                    <span class="label">Minutos</span>
-                </div>
-                <div class="time-unit">
-                    <span id="seconds"></span>
-                    <span class="label">Segundos</span>
+                
+                <div id="countdown" class="countdown hidden">
+                    <p>¡Nos casamos en:</p>
+                    <div id="timer"></div>
                 </div>
             </div>
-        </section>
+        </div>
 
+        <div class="images">
+            <img src="assets/imagen1.jpg" alt="Imagen 1" class="animated-image">
+            <img src="assets/imagen2.jpg" alt="Imagen 2" class="animated-image">
+            <!-- Más imágenes -->
+        </div>
     </div>
-
-    <canvas id="fireworks-canvas" class="hidden"></canvas>
 
     <script src="script.js"></script>
 </body>
